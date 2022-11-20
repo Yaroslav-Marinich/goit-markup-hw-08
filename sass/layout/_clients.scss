@@ -1,11 +1,19 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .clients-item {
-  width: calc((100% - 150px) / 6);
+  // width: calc((100% - 150px) / 6);
+@include calc(2);
   height: 92px;
+  @include tablet {
+    @include calc(3);
+  }
+  @include desktop {
+    @include calc(6);
+  }
 }
 
 .client-link {

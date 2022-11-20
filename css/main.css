@@ -29,15 +29,36 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 html {
@@ -73,6 +94,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .list {
@@ -152,6 +174,7 @@ img {
 
 .main-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -335,6 +358,25 @@ img {
   color: var(--accent-color);
 }
 
+.section-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
+}
+
 .header {
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
@@ -433,19 +475,32 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .cards__title {
+    text-align: left;
+  }
+}
 
 .cards__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
-.cards__item {
-  display: block;
-  max-width: 270px;
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .cards__text {
@@ -465,15 +520,16 @@ img {
 
 .preview {
   padding-top: 0;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .preview {
+    display: flex;
+  }
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
+.preview-item {
+  width: calc((100% - 60px) / 3);
 }
 
 .preview-top-wrap {
@@ -516,13 +572,29 @@ img {
 
 .team-wrap {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-wrap {
+    padding-bottom: 30px;
+  }
 }
 
 .team-item {
+  width: 100%;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-text {
@@ -567,12 +639,23 @@ img {
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .clients-item {
-  width: calc((100% - 150px) / 6);
+  width: calc((100% - 30px) / 2);
   height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .client-link {
@@ -598,6 +681,8 @@ img {
 }
 
 .footer {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -605,8 +690,15 @@ img {
 
 .footer_menu {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer_menu {
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .contacts-item:not(:last-child) {
@@ -666,6 +758,7 @@ img {
 
 .email {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 

@@ -1,4 +1,6 @@
 .footer {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -6,10 +8,17 @@
 
 .footer_menu {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  @include desktop {
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
+.footer__address {
+}
 
 .contacts-item:not(:last-child) {
   line-height: 1.71;
@@ -72,6 +81,7 @@
 
 .email {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 

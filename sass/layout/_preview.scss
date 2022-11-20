@@ -1,14 +1,13 @@
 .preview {
   padding-top: 0;
+  display: none;
+  @include desktop {
+    display: flex;
+  }
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
+.preview-item {
+  @include calc(3);
 }
 
 .preview-top-wrap {
