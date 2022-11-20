@@ -136,6 +136,8 @@ img {
 }
 
 .logo {
+  display: block;
+  text-align: center;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -699,6 +701,11 @@ img {
     align-items: baseline;
     justify-content: space-between;
   }
+}
+
+.footer__address {
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts-item:not(:last-child) {
