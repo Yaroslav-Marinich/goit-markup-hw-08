@@ -15,13 +15,18 @@
   transform: translate(-50%, -50%) scaley(1);
   transition: transform 250ms linear;
 
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
 
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -58,11 +63,15 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 12px;
+
+  @include desktop {
+    line-height: calc(23 / 20);
+  }
 }
 
 .input-wrap {
@@ -75,7 +84,7 @@
 
 .input-label {
   font-size: 12px;
-  line-height: 1.17;
+  line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   display: block;
   margin-bottom: 4px;
@@ -102,10 +111,15 @@
   }
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @include desktop {
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 }
 
@@ -138,11 +152,16 @@
 }
 
 .modal-license-text {
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
   position: relative;
+
+  @include desktop {
+    line-height: calc(24 / 14);
+  }
 }
 
 .modal-license-text span {

@@ -1,20 +1,27 @@
 .hero {
   background: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/hero1x/hero-bg@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+
   margin: 0 auto;
+
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
 }
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: calc(42 / 26);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -22,5 +29,14 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 696px;
+
+  @include tablet {
+    width: 360px;
+  }
+
+  @include desktop {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    width: 696px;
+  }
 }
