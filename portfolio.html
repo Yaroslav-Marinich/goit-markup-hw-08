@@ -27,7 +27,7 @@
           <a class="logo" href="./index.html"
             ><span class="logo--main">Web</span><span class="logo--dark">Studio</span></a
           >
-          
+
           <button type="button" class="nav_menu-open" data-menu-open>
             <svg class="nav_menu-open-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-mob-menu"></use>
@@ -59,74 +59,80 @@
           </li>
         </ul>
       </div>
-      
+
       <div class="mob-menu is-hidden" data-menu>
         <div class="container">
           <button type="button" class="mob-menu__close" data-menu-close>
-          <svg class="mob-menu__close-icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-close_40px"></use>
-          </svg>
-        </button>
-        <div class="mob-menu__wrap">
-          <div class="mob-menu__nav-wrap">
-            <ul class="mob-menu__main-list list">
-            <li class="mob-menu__main-item">
-              <a class="mob-menu__main-link link mob-current" href="./index.html">Студія</a>
-            </li>
-            <li class="mob-menu__main-item">
-              <a class="mob-menu__main-link link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="mob-menu__main-item"><a class="mob-menu__main-link link" href="">Контакти</a></li>
-          </ul>
-          </div>
-          <div class="mob-menu__contact-wrap">
-            <ul class="mob-menu__contact-list list">
-              <li class="mob-menu__contact-item">
-              <a class="mob-menu__tel link" href="tel:+380961111111"> +38 096 111 11 11</a>
-            </li>
-            <li class="mob-menu__contact-item">
-              <a class="mob-menu__email link" href="mailto:info@devstudio.com">
-                info@devstudio.com</a>
-            </li>
-          </ul>
-          <ul class="mob-menu__soc-list list">
-            <li class="mob-menu__soc-item">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="mob-menu__soc-link link"
-              >Instagram</a>
-            </li>
-            <li class="mob-menu__soc-item">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="mob-menu__soc-link link"
-              >Twitter</a>
-            </li>
-            <li class="mob-menu__soc-item">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="mob-menu__soc-link link"
-              >Facebook</a>
-            </li>
-            <li class="mob-menu__soc-item">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="mob-menu__soc-link link"
-              >LinkedIn</a>
-            </li>
-          </ul>
+            <svg class="mob-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <div class="mob-menu__wrap">
+            <div class="mob-menu__nav-wrap">
+              <ul class="mob-menu__main-list list">
+                <li class="mob-menu__main-item">
+                  <a class="mob-menu__main-link link mob-current" href="./index.html">Студія</a>
+                </li>
+                <li class="mob-menu__main-item">
+                  <a class="mob-menu__main-link link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mob-menu__main-item">
+                  <a class="mob-menu__main-link link" href="">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu__contact-wrap">
+              <ul class="mob-menu__contact-list list">
+                <li class="mob-menu__contact-item">
+                  <a class="mob-menu__tel link" href="tel:+380961111111"> +38 096 111 11 11</a>
+                </li>
+                <li class="mob-menu__contact-item">
+                  <a class="mob-menu__email link" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob-menu__soc-list list">
+                <li class="mob-menu__soc-item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob-menu__soc-link link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob-menu__soc-item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob-menu__soc-link link"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mob-menu__soc-item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob-menu__soc-link link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mob-menu__soc-item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob-menu__soc-link link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        </div>
-        
       </div>
     </header>
     <!-- Hero -->
@@ -154,11 +160,34 @@
                 class="content-link link"
               >
                 <div class="content-top-wrap">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio1x/technocrack@1x.jpg"
-                    alt="Веб-сайт Технокряк"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/technocrack@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/technocrack@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/technocrack-tab@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/technocrack-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/technocrack-mob@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/technocrack-mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/portfolio1x/technocrack@1x.jpg"
+                      alt="Веб-сайт Технокряк"
+                    />
+                  </picture>
                   <p class="content-top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -179,11 +208,34 @@
                 class="content-link link"
               >
                 <div class="content-top-wrap">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio1x/poster@1x.jpg"
-                    alt=" Дизайн постеру до баскетбольного матчу"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/poster@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/poster@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/poster-tab@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/poster-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/poster-mob@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/poster-mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/portfolio1x/poster@1x.jpg"
+                      alt=" Дизайн постеру до баскетбольного матчу"
+                    />
+                  </picture>
                   <p class="content-top-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus vitae quasi
                     accusamus necessitatibus quo dignissimos nisi assumenda eos, dolores possimus
@@ -206,11 +258,35 @@
                 class="content-link link"
               >
                 <div class="content-top-wrap">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio1x/seafood@1x.jpg"
-                    alt="Додаток ресторану морської кухні"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/seafood@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/seafood@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/seafood-tab@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/seafood-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/seafood-mob@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/seafood-mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/portfolio1x/seafood@1x.jpg"
+                      alt="Додаток ресторану морської кухні"
+                    />
+                  </picture>
+
                   <p class="content-top-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tempore eius
                     corporis, eum vel aut voluptates, inventore sit ullam deserunt quidem pariatur
@@ -231,11 +307,35 @@
                 class="content-link link"
               >
                 <div class="content-top-wrap">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio1x/prime@1x.jpg"
-                    alt="Маркетинговий проект Прайм"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/prime@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/prime@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/prime-tab@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/prime-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/prime-mob@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/prime-mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/portfolio1x/prime@1x.jpg"
+                      alt="Маркетинговий проект Прайм"
+                    />
+                  </picture>
+
                   <p class="content-top-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia nemo
                     recusandae aliquid pariatur provident distinctio. Cum repellat voluptatibus
@@ -256,11 +356,35 @@
                 class="content-link link"
               >
                 <div class="content-top-wrap">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio1x/boxes@1x.jpg"
-                    alt=" Додаток до проекту Boxes"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/boxes@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/boxes@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/boxes-tab@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/boxes-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/boxes-mob@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/boxes-mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/portfolio1x/boxes@1x.jpg"
+                      alt=" Додаток до проекту Boxes"
+                    />
+                  </picture>
+
                   <p class="content-top-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem,
                     necessitatibus autem aliquid perferendis commodi obcaecati vitae asperiores esse
@@ -281,11 +405,35 @@
                 class="content-link link"
               >
                 <div class="content-top-wrap">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio1x/no_borders@1x.jpg"
-                    alt="Веб-сайт Натхнення немає кордонів"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/no_borders@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/no_borders@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/no_borders-tab@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/no_borders-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/no_borders-mob@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/no_borders-mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/portfolio1x/no_borders@1x.jpg"
+                      alt="Веб-сайт Натхнення немає кордонів"
+                    />
+                  </picture>
+
                   <p class="content-top-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, officiis
                     nesciunt molestias necessitatibus soluta illo, natus ea quaerat magnam iusto
@@ -306,11 +454,35 @@
                 class="content-link link"
               >
                 <div class="content-top-wrap">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio1x/limited@1x.jpg"
-                    alt="Дизайн видання Limited Edition"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/limited@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/limited@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/limited-tab@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/limited-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/limited-mob@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/limited-mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/portfolio1x/limited@1x.jpg"
+                      alt="Дизайн видання Limited Edition"
+                    />
+                  </picture>
+
                   <p class="content-top-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione quia
                     numquam eos error labore eum culpa magnam tenetur reiciendis veritatis atque
@@ -331,11 +503,35 @@
                 class="content-link link"
               >
                 <div class="content-top-wrap">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio1x/lab@1x.jpg"
-                    alt="Проект Label Tag"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/lab@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/lab@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/lab-tab@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/lab-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/lab-mob@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/lab-mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/portfolio1x/lab@1x.jpg"
+                      alt="Проект Label Tag"
+                    />
+                  </picture>
+
                   <p class="content-top-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam eaque a quasi
                     ducimus, repellendus adipisci aliquam distinctio ut itaque, quo impedit
@@ -356,11 +552,35 @@
                 class="content-link link"
               >
                 <div class="content-top-wrap">
-                  <img
-                    class="img"
-                    src="./images/portfolio/portfolio1x/growing_business@1x.jpg"
-                    alt="Додаток для просування бізнесу"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/growing_business@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/growing_business@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/growing_business-tab@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/growing_business-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1x/growing_business-mob@1x.jpg 1x,
+                        ./images/portfolio/portfolio2x/growing_business-mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/portfolio1x/growing_business@1x.jpg"
+                      alt="Додаток для просування бізнесу"
+                    />
+                  </picture>
+
                   <p class="content-top-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit cumque amet
                     inventore, aspernatur mollitia soluta unde obcaecati nesciunt qui debitis,

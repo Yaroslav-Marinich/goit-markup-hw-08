@@ -1,6 +1,17 @@
 .content-item {
   background: var(--white-color);
-  width: calc((100% - 60px) / 3);
+
+  @include mobile {
+    @include calc(1);
+  }
+
+  @include tablet {
+    @include calc(2);
+  }
+
+  @include desktop {
+    @include calc(3);
+  }
 }
 
 .content-list {
@@ -23,7 +34,7 @@
 
 .content-title {
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36/18);
   letter-spacing: 0.06em;
   color: var(--title-text-color);
   margin-bottom: 4px;
@@ -70,7 +81,7 @@
 
 .content-text {
   font-size: 16px;
-  line-height: 1.87;
+  line-height: calc(30/16);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
