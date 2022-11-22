@@ -5,7 +5,6 @@
 }
 
 .clients-item {
-  // width: calc((100% - 150px) / 6);
 @include calc(2);
   height: 92px;
   @include tablet {
